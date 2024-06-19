@@ -1,15 +1,9 @@
 {
-  "version": 2,
-  "builds": [
-    {
-      "src": "api/v1/**/*.ts",
-      "use": "@vercel/node"
+  "functions": {
+    "api/v1/index.ts": {
+      "runtime": "nodejs",
+      "memory": 1024
     }
-  ],
-  "routes": [
-    {
-      "src": "/api/v1/(.*)",
-      "dest": "/api/v1/$1.js"
-    }
-  ]
+  },
+  "routes": [{ "src": "/api/v1/(.*)", "dest": "dist/api/v1/index.js" }]
 }

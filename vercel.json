@@ -1,7 +1,7 @@
 {
   "functions": {
     "api/v1/index.ts": {
-      "runtime": "nodejs20.x",
+      "runtime": "nodejs16.x",
       "memory": 1024
     }
   },

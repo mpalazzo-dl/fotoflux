@@ -1,9 +1,9 @@
 {
   "functions": {
     "api/v1/index.ts": {
-      "runtime": "nodejs",
+      "runtime": "nodejs16.x",
       "memory": 1024
     }
   },
-  "routes": [{ "src": "/api/v1/(.*)", "dest": "dist/api/v1/index.js" }]
+  "routes": [{ "src": "/api/v1/(.*)", "dest": "/api/v1/index.js" }]
 }

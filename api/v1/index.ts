@@ -1,7 +1,6 @@
 import express, { Request, Response } from "express";
 import sharp from "sharp";
 import axios from "axios";
-import url from "url";
 
 const app = express();
 
